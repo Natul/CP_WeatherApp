@@ -34,6 +34,7 @@ export const fetchLocationId = async city => {
     };
   };
   
+  /*
   export const fetchOpenWeatherGPS = async coords => {
     console.log(coords);
     const response = await fetch(
@@ -46,5 +47,6 @@ export const fetchLocationId = async city => {
       weather: weather[0].main,
       temperature: main.temp,
     };
-  };
+  };*/
+  
   

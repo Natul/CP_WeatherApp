@@ -9,7 +9,6 @@ const images = {
     'Heavy Rain': require('../assets/images/heavy-rain.png'),
     'Light Rain': require('../assets/images/light-rain.png'),
     Rain: require('../assets/images/light-rain.png'),
-    Drizzle: require('../assets/images/light-rain.png'),
     Showers: require('../assets/images/showers.png'),
     Sleet: require('../assets/images/sleet.png'),
     Snow: require('../assets/images/snow.png'),
