@@ -34,7 +34,6 @@ export const fetchLocationId = async city => {
     };
   };
   
-  /*
   export const fetchOpenWeatherGPS = async coords => {
     console.log(coords);
     const response = await fetch(
@@ -47,6 +46,16 @@ export const fetchLocationId = async city => {
       weather: weather[0].main,
       temperature: main.temp,
     };
-  };*/
+  };
   
   
+  export const firebaseConfig = {
+    apiKey: "AIzaSyBK-9HlmydgIfpRvMR1GCuW5CyZx8LVtfc",
+    authDomain: "weather-app-3abce.firebaseapp.com",
+    databaseURL: "https://weather-app-3abce.firebaseio.com",
+    projectId: "weather-app-3abce",
+    storageBucket: "weather-app-3abce.appspot.com",
+    messagingSenderId: "871433469116",
+    appId: "1:871433469116:web:b97d8d17bf0c8c0d9824b9",
+    measurementId: "G-YP1F948C43"
+  };

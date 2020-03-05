@@ -2,40 +2,27 @@ import React, {Component} from 'react';
 import {
   StyleSheet,
   View,
-  //ImageBackground,
+  ImageBackground,
   Text,
-  //KeyboardAvoidingView,
+  KeyboardAvoidingView,
   Platform,
   ActivityIndicator,
-  //StatusBar,
+  StatusBar,
 } from 'react-native';
-import {createAppContainer,createSwitchNavigator} from 'react-navigation';
 
-//import { fetchOpenWeatherCity, fetchOpenWeatherGPS } from './utils/api';
-//import getImageForWeather from './utils/getImageForWeather';
-import LoginScreen from './screens/LoginScreen';
-import LoadingScreen from './screens/LoadingScreen';
-import DashboardScreen from './screens/DashboardScreen';
+import { fetchOpenWeatherCity, fetchOpenWeatherGPS } from '../utils/api'
 
-import * as firebase from 'firebase';
-import{firebaseConfig} from '../Weather-app/utils/api'
-if (!firebase.apps.length) {
-firebase.initializeApp(firebaseConfig);
-}
-
-//import * as Location from 'expo-location';
-//import * as Permissions from 'expo-permissions';
+import getImageForWeather from '../utils/getImageForWeather'
+import * as Location from 'expo-location';
+import * as Permissions from 'expo-permissions';
 //import {Permissions} from 'expo';
 
-//import SearchInput from './components/SearchInput';
+import SearchInput from '../components/SearchInput'
 
 
 
-export default class App extends React.Component {
-  render(){
-    return <AppNavigator />;
-  }
-/*
+class DashboardScreen extends Component {
+
   state = {
       loading: false,
       error: false,
@@ -148,16 +135,9 @@ export default class App extends React.Component {
         </ImageBackground>
       </KeyboardAvoidingView>
     );
-  }*/
-};
-
-const AppSwitchNavigator = createSwitchNavigator({
-  LoadingScreen : LoadingScreen,
-  LoginScreen : LoginScreen,
-  DashboardScreen : DashboardScreen
-});
-const AppNavigator = createAppContainer(AppSwitchNavigator);
-
+  }
+}
+export default DashboardScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
